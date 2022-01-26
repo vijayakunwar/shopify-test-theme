@@ -212,9 +212,11 @@
   <body class="gradient">
     <h1> Hello shopy theme </h1>
 
-    {{template}}
-    {{template.name}}
-    {{template.directory}}
+    <ul>
+      <li> the file name of the template used to render the current page :{{template}}</li>
+      <li> the name of the template's base type : {{template.name}}</li>
+      <li> the name of the template's parent directory : {{template.directory}}</li>
+    </ul>
 
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
