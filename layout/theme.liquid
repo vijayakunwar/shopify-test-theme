@@ -213,9 +213,13 @@
     <h1> Hello shopy theme </h1>
 
     <ul>
-      <li> the file name of the template used to render the current page :{{template}}</li>
-      <li> the name of the template's base type : {{template.name}}</li>
-      <li> the name of the template's parent directory : {{template.directory}}</li>
+      <li> the file name of the template used to render the current page :<b> {{template}} </b></li>
+      <li> the name of the template's base type : <b>{{ template.name }}</b></li>
+      <li> the name of the template's parent directory : <b>{{ template.directory }}</b></li>
+    </ul>
+    <ul>
+        <li> the name of the custom page template assigned to the page : <b>{{ page.template_suffix }}</b></li>
+        <li> the relative URL of the page : <b>{{ page.url}}</b></li>
     </ul>
 
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
